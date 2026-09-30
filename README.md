@@ -1,6 +1,6 @@
-# HomoNet — a draft
+# Weirwoods — a draft
 
-A working name for a part of the web where what you read was, with good
+A part of the web where what you read was, with good
 reason to believe it, made by people who stand behind it. This document is a
 first sketch of the idea: what it can promise, how it could work, what it
 would be built from, and where it will fail.
@@ -145,7 +145,7 @@ default trust list, but the protocol must work without it.
 ## 3. The format: simpler than HTML, built on the web
 
 The web is hard to implement because HTML, CSS and JavaScript carry thirty
-years of compatibility. HomoNet content does not need that. It needs two
+years of compatibility. Weirwoods content does not need that. It needs two
 kinds of thing:
 
 ### Documents (most content)
@@ -171,7 +171,7 @@ Rules that make it trustworthy and accessible by construction:
   what the author published.
 - **Maps to HTML one way.** A gateway renders any document to clean,
   accessible HTML, so ordinary browsers and search engines can read it.
-  The reverse (arbitrary HTML into HomoNet) is not a goal.
+  The reverse (arbitrary HTML into Weirwoods) is not a goal.
 
 ### Apps
 
@@ -183,7 +183,7 @@ permissions.
 - UI is declared in the same markup family as documents (the Rave
   direction: HTML-shaped markup, routed, checked without a browser), so
   the accessibility tree comes from the markup, not from ARIA added later.
-- The same package runs in a HomoNet reader, inside a normal web page
+- The same package runs in a Weirwoods reader, inside a normal web page
   (WASM + DOM host), and as a mobile app (EVG's iOS/Android hosts).
 - Apps are signed and reviewed like any other content; their manifest is
   in the transparency log.
@@ -246,16 +246,24 @@ path works.
   own?
 - How does quoting and remixing work when both parts are signed?
 
-## 7. On the name
+## 7. The name
 
-"HomoNet" states the goal but reads badly in English and promises more than
-can be kept. The idea is closer to accountability and craft than to
-biology. Some directions:
+In *A Song of Ice and Fire*, weirwoods are the old white trees with carved
+faces. Most were cut down in the south; they survive in a few castle
+godswoods, on the Isle of Faces, and in the forests of the North. Near
+them, the dead "hold no power".
 
-- **Longhand** — written by hand, with care.
-- **Hearth** — a place where people you can trust gather.
-- **Commons** / **Trusted Commons** — shared, governed, public.
-- **Signed Web** — descriptive, technical.
-- **Provenance** — says exactly what the system offers.
+The mapping to this project:
 
-The repository keeps the working name until one is chosen.
+| In the story | In Weirwoods |
+|---|---|
+| Heart tree, a carved face | A steward: a known place with a face you can recognise |
+| Godswood around it | The steward's space: its charter, review and log |
+| Surviving groves scattered across the land | Stewards are many and independent, not one owner |
+| Wights hold no power here | Mass-generated content has no standing inside |
+| Old gods seen through the trees | Transparency: what happens is visible to all |
+
+Name risk: "weirwood" is George R. R. Martin's coinage and part of an HBO
+franchise. As a project name for a non-commercial draft it is fine; before
+it becomes a public product or foundation, check trademarks, or keep
+Weirwoods as the project name and choose a plainer name for the protocol.
