@@ -1,4 +1,4 @@
-# Weirwoods — a draft
+# Pihlaja — a draft
 
 A part of the web where what you read was, with good
 reason to believe it, made by people who stand behind it. This document is a
@@ -145,7 +145,7 @@ default trust list, but the protocol must work without it.
 ## 3. The format: simpler than HTML, built on the web
 
 The web is hard to implement because HTML, CSS and JavaScript carry thirty
-years of compatibility. Weirwoods content does not need that. It needs two
+years of compatibility. Pihlaja content does not need that. It needs two
 kinds of thing:
 
 ### Documents (most content)
@@ -171,7 +171,7 @@ Rules that make it trustworthy and accessible by construction:
   what the author published.
 - **Maps to HTML one way.** A gateway renders any document to clean,
   accessible HTML, so ordinary browsers and search engines can read it.
-  The reverse (arbitrary HTML into Weirwoods) is not a goal.
+  The reverse (arbitrary HTML into Pihlaja) is not a goal.
 
 ### Apps
 
@@ -183,7 +183,7 @@ permissions.
 - UI is declared in the same markup family as documents (the Rave
   direction: HTML-shaped markup, routed, checked without a browser), so
   the accessibility tree comes from the markup, not from ARIA added later.
-- The same package runs in a Weirwoods reader, inside a normal web page
+- The same package runs in a Pihlaja reader, inside a normal web page
   (WASM + DOM host), and as a mobile app (EVG's iOS/Android hosts).
 - Apps are signed and reviewed like any other content; their manifest is
   in the transparency log.
@@ -248,22 +248,27 @@ path works.
 
 ## 7. The name
 
-In *A Song of Ice and Fire*, weirwoods are the old white trees with carved
-faces. Most were cut down in the south; they survive in a few castle
-godswoods, on the Isle of Faces, and in the forests of the North. Near
-them, the dead "hold no power".
+*Pihlaja* is Finnish for rowan (*Sorbus aucuparia*). In Finnish and wider
+European folk tradition it was a sacred tree that protected against evil
+magic, and it was planted in the yard for luck and protection. The Kalevala
+line *"pyhät on pihlajat pihalla"* ("holy are the rowans in the yard")
+says where it belongs: next to the home, not in a distant temple.
 
-The mapping to this project:
-
-| In the story | In Weirwoods |
+| Rowan in tradition | In Pihlaja |
 |---|---|
-| Heart tree, a carved face | A steward: a known place with a face you can recognise |
-| Godswood around it | The steward's space: its charter, review and log |
-| Surviving groves scattered across the land | Stewards are many and independent, not one owner |
-| Wights hold no power here | Mass-generated content has no standing inside |
-| Old gods seen through the trees | Transparency: what happens is visible to all |
+| Planted in each yard for protection | Every steward keeps its own tree; there is no single owner |
+| Protects against evil magic | Mass-generated content has no standing inside |
+| Cattle let out to pasture through a rowan gate (*pihlajaveräjä*) | The identity gate every author passes once |
+| Grows on bare skerries where no other tree does | A small steward can run it with little infrastructure |
+| Tough, springy wood that bears storms and snow | Rules that bend under mistakes but do not break |
+| Birds eat the berries and spread the tree to new places | Readers carry trust from one steward to the next |
+| *"Ei pihlaja kahta taakkaa kanna"* ("a rowan does not bear two loads") | The publishing budget: one person, a human amount of work |
+| Five-pointed star on each berry, a sign of luck | A mark a reader can recognise: signed and accountable |
 
-Name risk: "weirwood" is George R. R. Martin's coinage and part of an HBO
-franchise. As a project name for a non-commercial draft it is fine; before
-it becomes a public product or foundation, check trademarks, or keep
-Weirwoods as the project name and choose a plainer name for the protocol.
+"Rowan" is the English form where a translation is needed. "Pihlaja" is a
+common word and also used in company names (for example Pihlajalinna), so a
+distinctive protocol or domain name may still be needed later.
+
+Source for the folklore: Satu Haapala, *Pyhät puut: Maagisten voimien
+pihlaja*, SATUnnaista, 17.6.2020
+<https://satunnaista.home.blog/2020/06/17/pyhat-puut-maagisten-voimien-pihlaja/>.
